@@ -1,5 +1,6 @@
 type GreetProps={
     name:string
+    //optional prop type
     numOfMessages?:number
     isLoggedIn:boolean,
 }
@@ -10,7 +11,7 @@ type GreetProps={
 
 export const Greet=(props:GreetProps)=>{
     const {numOfMessages=0}=props
-    
+
     return(
         <div>
             {
