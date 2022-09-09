@@ -1,7 +1,12 @@
+import { Stats } from 'fs';
 import './App.css';
 import { Greet } from './components/Greet';
+import { Heading } from './components/Heading';
+import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import { Status } from './components/Status';
+
 
 
 
@@ -29,9 +34,14 @@ function App() {
 
   return (
     <div className="App">
-        <Greet name="Daniel" numOfMessages={10} isLoggedIn={true}/>
-        <Person name={personName}/>
+        <Greet name="Daniel" numOfMessages={10} isLoggedIn={false}/>
+        {/* <Person name={personName}/>
         <PersonList names={names}/>
+        <Status status='loading'/>
+        <Heading>Placeholder Text </Heading> */}
+        <Oscar>
+          <Heading>Oscar is receiving an award</Heading>
+        </Oscar>
         
     </div>
   );
