@@ -1,6 +1,7 @@
 import { Stats } from 'fs';
 import './App.css';
 import { Button } from './components/Button';
+import { Container } from './components/Container';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Input } from './components/Input';
@@ -36,17 +37,17 @@ function App() {
 
   return (
     <div className="App">
-        <Greet name="Daniel" numOfMessages={10} isLoggedIn={false}/>
-        {/* <Person name={personName}/>
+        {/* <Greet name="Daniel" numOfMessages={10} isLoggedIn={false}/>
+        <Person name={personName}/>
         <PersonList names={names}/>
         <Status status='loading'/>
-        <Heading>Placeholder Text </Heading> */}
+        <Heading>Placeholder Text </Heading>
         <Oscar>
           <Heading>Oscar is receiving an award</Heading>
         </Oscar>
         <Button handleClick={(event,id)=>console.log("Hey", event, id)}/>
-        <Input value=''  handleChange={(event)=>{console.log(event)}}/>
-        
+        <Input value=''  handleChange={(event)=>{console.log(event)}}/> */}
+        <Container styles={{padding:"1rem", border:"1px solid black"}}/>
     </div>
   );
 }

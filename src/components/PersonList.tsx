@@ -1,9 +1,9 @@
+import {Name} from "./Person.type"
+
+
 //Array of objects
 type PersonListProps={
-    names:{
-        first:string,
-        last:string
-    }[]
+    names:Name[]
 }
 
 // interface PersonListProps{
